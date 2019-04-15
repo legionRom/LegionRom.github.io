@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
   #inf-header .navbar-brand {
-    color: #F00850 !important;
+    color: #fff !important;
     padding-left: 15px;
   }
   #inf-header #navbar li a {
@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
   }
   #inf-header #navbar li a:hover {
-    color: #F00850 !important;
+    color: #fff !important;
   }
   #inf-header #navbar li a span:before {
     background: #FFFFFF !important;
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   #inf-header #navbar li.active a {
     background: #FFFFFF;
     background: none;
-    color: #F00850 !important;
+    color: #fff !important;
   }
   #inf-header #navbar li.active a span:before {
     visibility: visible;
