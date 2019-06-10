@@ -1,89 +1,102 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LegionOS</title>
+  <meta charset="UTF-8">
+  <title>LegionOS</title>
+        <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
-    <!-- Compiled and minified CSS -->
+          <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
+            
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 </head>
 
 <body>
-    <nav class="purple darken-3">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo center"><font size="12%">Devices</font></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="http://legionos.ml/#"><font color="#3B99FC" size="5%">Home</font></a></li>
-                </ul>
-            </div>
-        </nav>
-    <!-- Devices List -->    
+    <nav class="blue-grey lighten-5 ">    
+    <div class="nav-wrapper"><a href="http://legionos.ml/" class="brand-logo center"><font color="#00c853">LegionOS Devices</font></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down bold2"></ul>
+  </div></nav>
 
-        <!-- Xiomi Devices List -->
-  <div class="card">
-    <div class="image center">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAA5FBMVEX////wWzbyUibVurTtVS7g2tf8///yVy7ckoXQhXXwWTPt8fHqZ0nvUSbeiXnxVCru7ez4vrTgY0bvShj++fjXZ0zzhW/o0c3bnZHxTyDh1dLUq6P86eXcpZrZfmrToZfevLXRf27cVzTnWzjoUCb3t6z1nY3al4rlbVPbcFjxRgzy9vbs3tzhtq7eiHfgVTDzfWbifmrgxsHnsKX1qZzYxsLxysTRlIj0i3fTbVbuv7fy087vopTeeWTnjHrWYkXt29f6yMDoMQD949/bSx/UsanwloTQdWLaXT7UaE/rrKLOXD95ColCAAAIf0lEQVR4nO2baXuaShSAYYJA1MkQ0cro1aDQuuASTdPcbK3panv///+5oAwMA1hjE9MnnveLPBwYmZfhMItKEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPDXYOhbYZ0GvL2ZzxsF76Wv+akpYKJtAcFrSHB4xRplluWNjzsrrIDGnmuyOwVFfjRForSzLNRxpIwQ82jvddmVXRz4aHJLTZV1i7kj0Kt3IBfxR0Ms64EelgNZJn1Rwgd0aA5krVJKlnWADmRtmXxNtsjhOZDJLJEYD9KBjMZ8WYfpoFjm8+JhOpBRiyvrlTjg+8Uifi+5mGoIfe7d8DocaMe9Xs96OM3kV++4S0UL7iIu61h7DQ5o4TeHX3ZJ0gGy4+ArcfDbwZ43S0ogV3HsUByIErTjOHQwDiSjwucEbRJHDseBZPND5OJ5HDggB8aSawjFfhw4IAfevXLwDtTZYx0Y8/SkE8MbV1efo0b+Mc+GsZoS3MGB9E7jHcSXnuug8PljXgW9/nK98cP8Z7d6/AFeeRZ85Dvwbq6u2ms6V3X+1ISDctxZzn8Wjs1ezlXMhvP1Vs2cP03FHkHDfRN85Duwh/4AQVmhEZcfH35/tINSlyZG2RE9sx22kBrdv4M6/o2D93xfiFxypz6+HUhzoiSaUsiYOkzuj2HWAc9Lwf139ZHnQNX5GhH+JvHjwy0dSDrqpuahpbqCo3LHn9Lx50a9Pws+kg7Mahw/eVIH6gDVxLxodKn+5PV6FOsr2tIBOuXO3MWBZDjoRLiAGhr8FWuXWzrAf+xAmlNqJ3boyMlet9w3+3MgWVTh62wjbD9DhXZgjw48PyXEbX8k05w+w97ZowPJcJHO8qIvREgGVW5brY6OmpbVPBpVpQyqo2/W3V3ryBCz7Ppo1Zi3LOvbiIuqRtP6bn0TT6hW9+1AOsI47CqpOnKT78Ix10Yak6lJTdOklFZaqbTpWRU/EkTxfXIgUvgavL4aM9cP++dGUbV+j2mA2U4MBtSBvncHfhpU1hcxFhOkpEdO1NaQ0mnHOrWOa35VukLivJwiZF5bp7/0TyYyB7zJh6EleT1f37Vu6TUT0ZOVQG+y2vVL/+kXZ3HWDPlkVwfNnR34vYRVV6nuPxVCqDNkY6bqf8s7drtK4wqiC/64JkXTZvidhk6Jy/VcHszeaEnd1jpc6rk0eN4KFYSjXZS2YwkFJaOvvJ2DI259+XEOpJFDBqpklElfbOKxgyReJ9HDbFKqc6eO+kiJJVjEkQm39FV30Eep4aBlYldsvyC/hAPJxkRXB5q8EAM/88bOap97gcwxHSdSQGmG4kpbRFYq/MMx99ubk/yhxFzB0cCknjVufH4Hag+RgYZbqUAtd/5gjqKBleFQ8Uyjj6JpXYsUneQMSC9YG0sOxnr0nm1mjhuf34Hk9YtFZZaeUskfO3vYXLBrooPUmQ0Fs3pbRBPSTIHK4q4RRUzpSzmQLoiMLtO7N8wfdFnoH4WkB9iqTtvhpkWwGKdyMqX6DWeKmLMXawfdoqxNMtpB/lzaJxqWdUb7GeERNcMba5HUAL1bnArdLK8WrQ++kANVJ0UiZ8wq5TkolUpL1Fxvv6EXWUUOWHEW4pfBV7GfWk14A3mDqGvyQg5srJWbREmPGAUHRv2m17muOE7wHaGDUgXfZpV5R98zB+dCA1Ovyb3gQJ29sINRWXMKkq1p9+LTwDtQ65Oy6/fp0Aq/4awdGI6TuS4+Nk/WpVn0XyHkOxDzr++AVeZFHKhtMg2yVgsT8R3HOfB0TOVz/YzRRZsdXJqTXAcTJE7r+w7ebnKAn9mBX/ebVeE6doWljNiBUaPKMT/o+7S9A7EH7r9N34mHfzc3OSh2n9fBAqPe+mq9AZkmn9PIQbWPpsk33DUNHXSzHdixA3FKIsvBu6dw0OB+l/wYB94URWnAcFA7EWQO/FH1VEiYndCB11cWWQ4uTJYT/34HfteemyOgyW4vczBSFLGzxBxIM/NDqtAgydBf662/30ELYT4HNKnLN3nmYJzuDkcOzuhESmO4NOx3ph1I783U0OSdeRNuhQ4M7rI3OEDbONj827y5ayZ6Rn7K5sd4zIFFrySByMHIlTMWYproa2jNMpti8K2Z6lZZph1uhQ5K2zkgfCPcyYFRQUIP2etTbk/UDszUvf7JHKgzcY1iXTC71ds5aG12sIyvacM60y4O1DaqiNMmDQfH18wcLBRHuNcGRt+ii06NrPwc2mUFP4mDa87B5EkdtJCc/m2DjeMVhx9f11VX71E72V7aGmLfHkzFLoQaIcKqlO0gtSt2UFBW/YmkAz4d3SXWnf/QQYOIc6irKllm1PI6Snj76xjxT4NfbTlyIHkVEtUgjHL9Iiv9R7LxMJ2bNzrQuHaQXHtX+JuY5yD/fyxeN52eV1XomKwGna/sEbgwUY19ndqoUVSMHUilPkJt1lNS511i6vE1XwxTcxB22sFRdBRzoCjFiEQrfI/igIL5DlrDVKKzNM5B/n+6JmxUk2LAfnbQiYb+6hgjpda6XSxuWzVCB5cVNo8U4E0QUgZjP/qhV/YP5KcXH4bcgWvmw9R8zdGQGS4o1urzvl9h9M/57F+PA5V+ogqF/mAwYJHvcaZbuOFIDyFKef/250neArNXW67fRTqXMkcz7JfgBkPHsl/HVmLKWZ0PggWTVdQ5SXQpHz6n5iAKn1Nv01G0ywhzslcyIpIX6sUBYY3K88k4RV3YIfMvX75w3z2y89fYPTv8XRrfYVIX1uT8/Hym20EpVaGFe/WzIDqxboX6iQcGJX1Jf+UiCs73/7sPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIv/AVmz4c8ekM/QAAAAAElFTkSuQmCC">
-        </div></div>
-        <div class="row"  style="max-width: 50rem;">
-            <div class="col s12 m6">
-                <div class="card-small">
-                              <p class="card__image"><img src="http://phonedb.net/img/xiaomi_redmi5_plus.jpg" width="350" height="450" alt=""/></p>
-                        <span class="card-title"><font size="10%" color="#f44336">Redmi 5 Plus</font></span>
-                    <div class="card-content">
-                        <h5><font color="#4527a0">Code Name:</font><font color="#f57c00" size="5%">vince</font></h5>
-                        <h5><font color="#4527a0">Maintainer:</font><font color="#f57c00" size="5%">Raj kale</font></h5>
-                    </div>
-                </div>
-                <a href="https://excellmedia.dl.sourceforge.net/project/legionrom/vince/LEGIONOS-1.4-vince-OFFICIAL-20190523-0639.zip" class="btn  light-blue darken-3" >Download</a>
-            </div>
+  <!-- Devices List -->
+
+  <!-- Xiomi Devices -->
+      <img class="materialboxed" width="500" src="https://ubuykw.s3.amazonaws.com/ubuy/wysiwyg/xiaomi.png.png">
+
+      <!-- Vince -->
+
+  <div class="row">
+    <div class="col s20 m7">
+      <div class="card hoverable">
+        <div class="cardimage">
+          <img src="http://phonedb.net/img/xiaomi_redmi5_plus.jpg"><br>
+          <span class="card-title"><font color="#f44242" size="10%">Redmi 5 Plus</font></span>
         </div>
-
-                <!-- Motorola Devices List -->
-  <div class="card">
-    <div class="image center">
-            <img src="https://seeklogo.com/images/M/motorola-logo-268D98226D-seeklogo.com.png">
-        </div></div>
-        <div class="row"  style="max-width: 50rem;">
-            <div class="col s12 m6">
-                <div class="card-small">
-                    <p class="card__image"><img src="https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g5s-plus-1.jpg" width="450" height="450" alt=""/></p>
-                    <span class="card-title"><font size="10%" color="#f44336">Redmi 5 Plus</font></span>
-                    <div class="card-content">
-                        <h5><font color="#4527a0">Code Name:</font><font color="#f57c00" size="5%">sanders</font></h5>
-                        <h5><font color="#4527a0">Maintainer:</font><font color="#f57c00" size="5%">Lucas Ponez</font></h5>
-                    </div>
-                </div>
-                <a href="https://excellmedia.dl.sourceforge.net/project/legionrom/sanders/LEGIONOS-1.4-sanders-OFFICIAL-20190601-1246.zip" class="btn  light-blue darken-3">Download</a>
-            </div>
+        <div class="card-content">
+         <p><font color="#536dfe" size="5%">Codename:</font><a href="https://forum.xda-developers.com/redmi-note-5/development/rom-legion-os-pie-official-t3921307"><font size="4%" color="#0c8c28">vince</font></a></p>
+         <p><font color="#536dfe" size="5%">Maintainer:</font><a href="https://forum.xda-developers.com/member.php?u=6895196"><font size="4%" color="#0c8c28">Raj Kale</font></a></p>
+        </div> 
+        <div class="card-action">
+          <a href="https://excellmedia.dl.sourceforge.net/project/legionrom/vince/LEGIONOS-1.4-vince-OFFICIAL-20190523-0639.zip" class="btn  light-blue darken-3">Downloads</a>
         </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Motorola devices -->
+  <img class="materialboxed" width="500" height="300" src="http://www.salientcrgt.com/wp-content/uploads/2015/10/motorola-logo.jpg">
+        <img class="">
 
-                <!-- Smartron Devices List -->
-  <div class="card">
-    <div class="image center">
-            <p class="card__image"><img src="https://smartron.com/images/smartron-logo.svg" width="400" height="250" alt=""/></p>
-        </div></div>
-        <div class="row"  style="max-width: 50rem;">
-            <div class="col s12 m6">
-                <div class="card-small">
-                    <p class="card__image"><img src="https://images-na.ssl-images-amazon.com/images/I/51WQE8hY1IL.jpg" width="400" height="500" alt=""/></p>
-                    <span class="card-title"><font size="10%" color="#f44336">Redmi 5 Plus</font></span>
-                    <div class="card-content">
-                        <h5><font color="#4527a0">Code Name:</font><font color="#f57c00" size="5%">rimo02a</font></h5>
-                        <h5><font color="#4527a0">Maintainer:</font><font color="#f57c00" size="5%">Prashant</font></h5>
-                    </div>
-                </div>
-                <a href="https://excellmedia.dl.sourceforge.net/project/legionrom/rimo02a/LEGIONOS-1.5-rimo02a-OFFICIAL-20190609-1151.zip" class="btn  light-blue darken-3">Download</a>
-            </div>
+      <!-- Sanders -->
+
+  <div class="row">
+    <div class="col s20 m7">
+      <div class="card hoverable">
+        <div class="cardimage">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71MLK0yFK0L._SY550_.jpg"><br>
+          <span class="card-title"><font color="#f44242" size="10%">Moto G (5S) Plus</font></span>
         </div>
+        <div class="card-content">
+         <p><font color="#536dfe" size="5%">Codename:</font><a href="https://forum.xda-developers.com/moto-g5s-plus/development/rom-legionos-pie-t3933995"><font size="4%" color="#0c8c28">sanders</font></a></p>
+         <p><font color="#536dfe" size="5%">Maintainer:</font><a href="https://forum.xda-developers.com/member.php?u=9941920"><font size="4%" color="#0c8c28">Lucas Ponez</font></a></p>
+        </div> 
+        <div class="card-action">
+          <a href="https://excellmedia.dl.sourceforge.net/project/legionrom/sanders/LEGIONOS-1.4-sanders-OFFICIAL-20190601-1246.zip" class="btn  light-blue darken-3">Downloads</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Smartron Devices -->
+    <img class="materialboxed" width="500" height="300" src="https://smartron.com/images/smartron-logo.svg" width="400">
+
+    <!-- Smartron SRT phone -->
+    <div class="row">
+    <div class="col s20 m7">
+      <div class="card hoverable">
+        <div class="cardimage">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/51WQE8hY1IL.jpg"><br>
+          <span class="card-title"><font color="#f44242" size="10%">Smartron SRT phone</font></span>
+        </div>
+        <div class="card-content">
+         <p><font color="#536dfe" size="5%">Codename:</font><a href="https://forum.xda-developers.com/moto-g5s-plus/development/rom-legionos-pie-t3933995"><font size="4%" color="#0c8c28">rimo02a</font></a></p>
+         <p><font color="#536dfe" size="5%">Maintainer:</font><a href="https://forum.xda-developers.com/member.php?u=8420718"><font size="4%" color="#0c8c28">Prashant</font></a></p>
+        </div> 
+        <div class="card-action">
+          <a href="https://excellmedia.dl.sourceforge.net/project/legionrom/rimo02a/LEGIONOS-1.5-rimo02a-OFFICIAL-20190609-1151.zip" class="btn  light-blue darken-3">Downloads</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
-
-
+        
+</html>
